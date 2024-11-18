@@ -1,8 +1,14 @@
-const RootComponent = {};
+const Timer = {
+	data() {
+		return {
+			timer: 0,
+		};
+	},
+	mounted() {
+		setInterval(() => {
+			this.timer++;
+		}, 1000);
+	},
+};
 
-const app = Vue.createApp(RootComponent);
-
-// Make an Instance of the RootComponent
-const RootComponentInstance = app.mount("#app");
-
-
+Vue.createApp(Timer).mount("#timer");
