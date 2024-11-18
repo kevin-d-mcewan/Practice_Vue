@@ -12,6 +12,14 @@
 	<body>
 		<h1>Build Your First Vue.js App</h1>
 
+		<!-- Hover Element Div -->
+		<div id="to-hover-element">
+			<span v-bind:title="onHoverText">
+				Hover over me to see a reactive title.
+			</span>
+		</div>
+
+		<!-- Timer Div -->
 		<div id="timer">Timer: {{timer}}</div>
 
 		<script src="script.js"></script>
