@@ -10,18 +10,15 @@
 		<!--Used when not having Vue Files dloaded-->
 	</head>
 	<body>
-		<h1>Build Your First Vue.js App</h1>
+		<h1>Build a List with Vue.js</h1>
 
-		<!-- Hover Element Div -->
-		<div id="to-hover-element">
-			<span v-bind:title="onHoverText">
-				Hover over me to see a reactive title.
-			</span>
+		<div id="list">		<!-- This <div> is 'listItem'-->
+			<ol>		<!-- Each <ol> is 'eachItem'-->
+				<li v-for="eachItem in listItems">{{eachItem.item}}</li>		<!-- Each <li> is the item-->
+			</ol>
 		</div>
 
-		<!-- Timer Div -->
-		<div id="timer">Timer: {{timer}}</div>
-
+		<!-- JavaScript File -->
 		<script src="script.js"></script>
 	</body>
 </html>
