@@ -1,3 +1,4 @@
+/* Loop Through an Array Showing 'Key' and 'Value' */
 Vue.createApp({
 	data() {
 		return {
