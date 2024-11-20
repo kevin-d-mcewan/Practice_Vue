@@ -1,13 +1,7 @@
-const List = {
+const interpolateApp = {
 	data() {
-		return {
-			listItems: [
-				{ item: "Study Vue Course" },
-				{ item: "Learn React Native" },
-				{ item: "Study Angular" },
-			],
-		};
+		return { html: "<span style = 'color: blue'>Text in blue</span>" };
 	},
 };
 
-Vue.createApp(List).mount("#list");
+Vue.createApp(interpolateApp).mount("#app");
