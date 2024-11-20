@@ -10,8 +10,14 @@
 		<!--Used when not having Vue Files dloaded-->
 	</head>
 	<body>
-		<h1 id="title">Data Properties with Vue.js</h1>
-		<div id="app"></div>
+		<h1 id="title">Loop Through a Range in Vue.js</h1>
+
+		<div id="loop-range">
+			<span v-for="number in 20">
+				<span v-if="number < 20">{{number}}, </span>
+				<span v-else-if="number == 20">{{number}}</span>
+			</span>
+		</div>
 
 		<!-- JavaScript File -->
 		<script src="script.js"></script>
