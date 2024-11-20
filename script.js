@@ -1,12 +1,11 @@
-/* Loop Through an Array Showing 'Key' and 'Value' */
 Vue.createApp({
 	data() {
 		return {
-			items: [
-				{ baseballTeam: "Red Sox" },
-				{ baseballTeam: "Marlins" },
-				{ baseballTeam: "Padres" },
-			],
+			dogObject: {
+				breed: "Great Pyrnees",
+				ageInYears: 5,
+				owner: "Kevin M",
+			},
 		};
 	},
-}).mount("#to-loop-array");
+}).mount("#dog-list");

@@ -10,12 +10,16 @@
 		<!--Used when not having Vue Files dloaded-->
 	</head>
 	<body>
-		<h1 id="title">Loop Through a Array in Vue.js</h1>
+		<h1 id="title">Loop Through Object in Vue.js</h1>
 
-		<ol id="to-loop-array">
-			<li v-for="item in items">{{item.baseballTeam}}</li>
-		</ol>
+		<div id="container-1">
+			<ol id="dog-list">
+				<li v-for="(value, name) in dogObject">{{ name }} : {{ value }}</li>
+			</ol>
+		</div>
 
+		<!-- Package used to enable 'LODASH'-->
+		<script src="https://unpkg.com/lodash@4.17.20/lodash.min.js"></script>
 		<!-- JavaScript File -->
 		<script src="script.js"></script>
 	</body>
