@@ -1,11 +1,12 @@
 Vue.createApp({
 	data() {
 		return {
-			dogObject: {
-				breed: "Great Pyrnees",
-				ageInYears: 5,
-				owner: "Kevin M",
+			bearObject: {
+				breed: "Polar Bear",
+				age: 13,
+				owner: "Mother Nature",
+				vegiterrian: false,
 			},
 		};
 	},
-}).mount("#dog-list");
+}).mount("#bear-list");

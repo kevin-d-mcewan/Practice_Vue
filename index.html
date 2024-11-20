@@ -10,11 +10,14 @@
 		<!--Used when not having Vue Files dloaded-->
 	</head>
 	<body>
-		<h1 id="title">Loop Through Object in Vue.js</h1>
+		<h1 id="title">Loop Through Object with Key and Index in Vue.js</h1>
 
 		<div id="container-1">
-			<ol id="dog-list">
-				<li v-for="(value, name) in dogObject">{{ name }} : {{ value }}</li>
+			<ol id="bear-list">
+				<!-- Make sure to always but in order of 'Value' -> 'Key' -> 'index' -->
+				<li v-for="(value, name, index) in bearObject">
+					{{ index }} - {{ name }}: {{ value }}
+				</li>
 			</ol>
 		</div>
 
