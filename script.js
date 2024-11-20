@@ -1,7 +1,24 @@
-const interpolateApp = {
+const app = Vue.createApp({
 	data() {
-		return { html: "<span style = 'color: blue'>Text in blue</span>" };
+		return {
+			data: 0,
+		};
 	},
-};
+});
 
-Vue.createApp(interpolateApp).mount("#app");
+const appInstance = app.mount("#app");
+
+// Calls and shows 0 from
+console.log(appInstance.value);
+
+console.log(appInstance.$data.value);
+
+appInstance.value = 10000;
+
+console.log(appInstance.$data.value);
+
+appInstance.$data.value = 5555;
+
+console.log(appInstance.value);
+
+/* THIS IS SHOWING THAT CALLING 'VALUE' IT WORKS THE SAME AS LONG AS THERE IS NO OTHER VALUES*/
