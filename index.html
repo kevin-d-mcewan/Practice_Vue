@@ -77,6 +77,52 @@
 				</div>
 
 				<span>Selected: {{ checkedOptions }} </span>
+				<!-- Radio Button Div -->
+				<div id="radBtnSection">
+					<p>What kind of prouduct are you inquiring about?</p>
+
+					<div id="radBtnDiv">
+						<input
+							type="radio"
+							id="courses"
+							value="Courses"
+							v-model="radioButtonPicked"
+						/>
+						<label for="courses">Courses</label>
+					</div>
+
+					<div id="radBtnDiv">
+						<input
+							type="radio"
+							id="books"
+							value="Books"
+							v-model="radioButtonPicked"
+						/>
+						<label for="books">Books</label>
+					</div>
+
+					<div id="radBtnDiv">
+						<input
+							type="radio"
+							id="games"
+							value="Games"
+							v-model="radioButtonPicked"
+						/>
+						<label for="games">Games</label>
+					</div>
+
+					<div id="radBtnDiv">
+						<input
+							type="radio"
+							id="movies"
+							value="Movies"
+							v-model="radioButtonPicked"
+						/>
+						<label for="movies">Movies</label>
+					</div>
+
+					<span>Chosen: {{ radioButtonPicked }} </span>
+				</div>
 			</div>
 		</div>
 

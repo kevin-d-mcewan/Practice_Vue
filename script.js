@@ -28,6 +28,7 @@ Vue.createApp({
 				},
 			],
 			checkedOptions: [],
+			radioButtonPicked: "",
 		};
 	},
 }).mount("#form");
