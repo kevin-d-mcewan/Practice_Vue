@@ -10,7 +10,7 @@
 		<!--Used when not having Vue Files dloaded-->
 	</head>
 	<body>
-		<h1 id="title">Build an Input Field in Vue.js</h1>
+		<h1 id="title">Build a Form in Vue.js</h1>
 
 		<div id="container-1">
 			<div id="form">
@@ -32,6 +32,16 @@
 					v-model="textAreaContent"
 					placeholder="I have a question..."
 				></textarea>
+
+				<p>How did you hear about us?</p>
+				<select v-model="selected">
+					<option v-for="option in options" v-bind:value="option.value">
+						{{ option.text }}
+					</option>
+				</select>
+				<span style="padding-left: 1em; font-variant: small-caps"
+					>{{ selected }}
+				</span>
 			</div>
 		</div>
 
