@@ -3,6 +3,7 @@ Vue.createApp({
 		return {
 			// This will place whatever information 'inputText' recieves into <p id="fnInpTxt"></p>
 			inputText: "",
+			textAreaContent: "",
 		};
 	},
 }).mount("#form");

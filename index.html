@@ -15,12 +15,23 @@
 		<div id="container-1">
 			<div id="form">
 				<label for="full-name">Full Name: </label>
+				<!-- Using 'v-model' anything that is inputed will be saved into the "value" (i.e. key-value) on attached
+				     item in "script.js" -->
 				<input
 					id="full-name"
 					v-model="inputText"
 					placeholder="i.e. John Smith"
 				/>
 				<p id="fnInpTxt">{{inputText}}</p>
+
+				<!-- Entering ? or Comment -->
+				<p>Enter your Question/Comment</p>
+				<!-- 'pre-line' will make any "enter" on its on line on the Webpage -->
+				<p style="white-space: pre-line">{{ textAreaContent }}</p>
+				<textarea
+					v-model="textAreaContent"
+					placeholder="I have a question..."
+				></textarea>
 			</div>
 		</div>
 
