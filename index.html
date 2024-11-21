@@ -42,6 +42,41 @@
 				<span style="padding-left: 1em; font-variant: small-caps"
 					>{{ selected }}
 				</span>
+				<p>Who is this message for?</p>
+				<!-- Questions Team Checkbox -->
+				<div id="chkBoxDiv">
+					<input
+						type="checkbox"
+						id="questions"
+						value="Questions Team"
+						v-model="checkedOptions"
+					/>
+					<label for="questions">Questions Team</label>
+				</div>
+
+				<!-- Comments Team Checkbox -->
+				<div id="chkBoxDiv">
+					<input
+						type="checkbox"
+						id="comments"
+						value="Comments Team"
+						v-model="checkedOptions"
+					/>
+					<label for="comments">Comments Team</label>
+				</div>
+
+				<!-- Head Office Checkbox -->
+				<div id="chkBoxDiv">
+					<input
+						type="checkbox"
+						id="head-office"
+						value="headOffice"
+						v-model="checkedOptions"
+					/>
+					<label for="head-office">Head Office</label>
+				</div>
+
+				<span>Selected: {{ checkedOptions }} </span>
 			</div>
 		</div>
 

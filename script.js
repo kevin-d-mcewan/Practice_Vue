@@ -27,6 +27,7 @@ Vue.createApp({
 					value: "luck",
 				},
 			],
+			checkedOptions: [],
 		};
 	},
 }).mount("#form");
